@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário em JavaScript</h1>
+    </header>
+    <section id="form">
+        <form id="form_user">
+            <label>Nome Completo:</label>
+            <br>
+            <input type="text" id="txt_name" class="text_box">
+            <br><br>
+            <label>E-mail:</label>
+            <br>
+            <input type="text" id="txt_email" class="text_box">
+            <br><br>
+            <label>Senha:</label>
+            <br>
+            <input type="text" id="txt_password" class="text_box">
+            <br><br>
+            <label>Sexo:</label>
+            <br>
+            <input type="radio" name="radio_gender" id="male" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radio_gender" id="female">
+                <label for="fem">Feminino</label>
+            <br><br>
+            <input class="button" type="button" value="Confirmar" id="button_confirm" onclick="register_user(txt_name.value, txt_email.value, txt_password.value, radio_gender.value)">
+        </form>
+    </section>
+    <br>
+    <section>
+        <div id="div_user">
+            <table id ="table_user">
+                <thead>
+                    <tr>
+                        <td class="short">ID</td>
+                        <td>Nome</td>
+                        <td>E-mail</td>
+                        <td>Senha</td>
+                        <td class="short">Sexo</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Thiago P Lins</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
